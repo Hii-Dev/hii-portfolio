@@ -15,7 +15,8 @@ export default function Portfolios() {
 
         <div className="relative flex flex-col items-center gap-2 text-sm text-stone-600">
           <span className="w-3 h-3 rounded-full bg-stone-400" />
-          <p className="z-10 mt-4">2003年 5月 17日 生まれ</p>
+          <p className="z-10 mt-4">愛媛県</p>
+          <p className="z-10">2003年 5月 17日 生まれ</p>
           <p className="z-10 text-xs text-stone-400">地元の小中学校 卒業</p>
         </div>
 
@@ -125,13 +126,34 @@ export default function Portfolios() {
             <h2 className="text-lg font-semibold tracking-tight">
               学生エンジニアコミュニティ参加
             </h2>
-            <span className="text-xs text-stone-400">2024 – 現在</span>
+            <span className="text-xs text-stone-400">2024 – 2026.03</span>
           </div>
           <p className="mt-4 text-sm leading-relaxed text-stone-600">
             学生エンジニアコミュニティでは、日々の学習内容の発表や勉強会の開催をはじめ、就職活動やインターンに関する情報共有など、学生同士が成長できるさまざまな活動を行っています。
           </p>
         </div>
+
         <span className="w-3 h-3 rounded-full bg-stone-400 z-10" />
+
+        <div className="relative w-full max-w-xl rounded-2xl border border-stone-200 bg-white/60 p-6 shadow-sm text-left transition-shadow hover:shadow-md">
+          <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+            <h2 className="text-lg font-semibold tracking-tight">
+              株式会社アイムービック <br /> インターンシップ
+            </h2>
+            <span className="text-xs text-stone-400">2025.8 – 2026.03</span>
+          </div>
+          <p className="mt-4 text-sm leading-relaxed text-stone-600">
+            メッセージボードアプリ/サービスの企画・開発を約8ヶ月間支援して頂きました。UXを意識した開発の重要性を学び、顧客目線で使いやすいWebアプリ/サービスを設計することの難しさも感じました。
+            <br />
+            3月に実施したメッセージボードアプリの実証実験では11人が参加し15件のメッセージを書き込みました。
+          </p>
+        </div>
+
+        <span className="w-3 h-3 rounded-full bg-stone-400 z-10" />
+
+        <p className="z-10 mt-4">就職のため千葉県へ移住</p>
+
+        {/* <span className="w-3 h-3 rounded-full bg-stone-400 z-10" /> */}
       </div>
 
       {/* フッター */}
