@@ -59,14 +59,14 @@ export default function Home() {
 
       <div className="animate-fade-in">
         <div className="grid gap-y-10 lg:grid-cols-2 lg:gap-y-10 lg:gap-x-5 xl:grid-cols-3">
-          <div className="duration-200 hover:scale-103 relativ pt-4 pb-5 pr-4  pl-4 ml-4 mr-4 rounded-2xl ">
+          <div className="duration-200 hover:scale-103 relativ pt-4 pb-5 pr-0  pl-4 ml-4 mr-4 rounded-2xl ">
             <h2 className=" border-b border-stone-200 pb-1 ">PROFILE</h2>
             <div className="mt-4">
               <p>hii / Haruto Higashimoto.</p>
               <p>Web Developer. </p>
-              <p>Ehime / Japan. | Next Tokyo.</p>
-              <p>Kawahara Computer Business College. </p>
-              <p>Sanno University.</p>
+              <p>Chiba / Japan.</p>
+              <p>Kawahara Computer Business College, Graduated 2026</p>
+              <p>Sanno University, Graduated 2026</p>
             </div>
             <div className=" mt-6 flex justify-center">
               <NextLink href="/background">
@@ -147,7 +147,7 @@ export default function Home() {
             <h2 className=" border-b border-stone-200 pb-1">PORTFOLIO</h2>
             <div className="mt-4">
               <p>
-                15 Projects <br />2 active / 13 completed or paused
+                16 Projects <br />2 active / 14 completed or paused
               </p>
               <div className=" mt-6 flex justify-center">
                 <NextLink href="/portfolio">
@@ -169,7 +169,7 @@ export default function Home() {
                 <FaSquareXTwitter className="text-black text-4xl" />
               </a>
               <a
-                href="https://github.com/CA01971020"
+                href="https://github.com/Hii-Dev"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block"
