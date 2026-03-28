@@ -2,6 +2,28 @@ import type { PortfolioData } from "@/types/PortfolioStatus";
 
 export const portfoliosdata: PortfolioData[] = [
   {
+    id: "mbapp",
+    title: "メッセージボードアプリ",
+    period: "2025年8月～2026年3月",
+    status: "paused",
+    imageUrl: "/noimg-hiidev.svg",
+    description: `学園祭作品「メッセージボード」を土台に自然な交流を促進する「リアル×掲示板×交流」サービス。企画・開発は愛媛県松山市に本社を置く株式会社アイム―ビック様よりご支援頂きました。2026年3月に河原電子ビジネス専門学校-オープンキャンパスで行われた紹介企画/実証実験では約1時間で11人が利用してくださいました。また、引越しによってプロジェクトへの参加が難しくなるため、プロジェクト・開発共に終了しました。`,
+    techStackTag: [
+      "TypeScript",
+      "React",
+      "TailwindCSS-v4",
+      "Shadcn/UI",
+      "Python",
+      "FastAPI",
+      "Neon",
+      "Render",
+      "Vercel",
+      "Figma",
+      "Canva",
+      "ChatGPT",
+    ],
+  },
+  {
     id: "yojizougo",
     title: "Yoji Zougo",
     url: "https://yoji-zougo.vercel.app/",
