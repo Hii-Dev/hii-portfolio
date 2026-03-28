@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <div className="flex items-center pt-1 pb-1 border-b-1 border-stone-200 backdrop-blur-md">
       <a
-        href="https://github.com/CA01971020"
+        href="https://github.com/Hii-Dev"
         target="_blank"
         rel="noopener noreferrer"
         className=" select-none pt-1 pl-4 pb-1 duration-200 hover:scale-110"
