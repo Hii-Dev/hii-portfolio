@@ -17,11 +17,9 @@ import { FaRegHandPointUp } from "react-icons/fa6";
 
 const texts = [
   "Hi, I'm Hii.",
-  "An engineering student from Ehime,Japan.",
-  "Studying at Kawahara Computer Business College.",
-  "Also affiliated with Sanno University.",
-  "Aspiring web developer.",
-  "Passionate about beer and reading.",
+  "I'm an engineer from Ehime, Japan.",
+  "I currently live in Chiba.",
+  "I enjoy beer and Netflix.",
 ];
 
 function TypingAnimation() {
@@ -83,7 +81,8 @@ export default function Home() {
                 CSS3 <br />
                 JavaScript <br />
                 TypeScript <br />
-                Python
+                Python <br />
+                Java
               </p>
               <p>
                 React <br />
