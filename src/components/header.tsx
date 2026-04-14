@@ -1,11 +1,12 @@
 "use client";
 
+import NextLink from "next/link";
 import CirclePhotoCard from "@/components/ui/CirclePhotoCard";
 import Menu from "./menu";
 
 export default function Header() {
   return (
-    <div className="flex items-center pt-1 pb-1 border-b-1 border-stone-200 backdrop-blur-md">
+    <div className="flex items-center pt-1 pb-1 border-b border-stone-200 backdrop-blur-md">
       <a
         href="https://github.com/Hii-Dev"
         target="_blank"
@@ -28,7 +29,9 @@ export default function Header() {
           }}
         />
       </a>
-      <h1 className=" relative left-6 select-none !text-black">hii</h1>
+      <h1 className=" relative left-6 select-none text-black!">
+        <NextLink href="/">hii</NextLink>
+      </h1>
       <Menu />
     </div>
   );
