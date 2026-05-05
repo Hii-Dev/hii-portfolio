@@ -87,7 +87,7 @@ export const PortfolioCard: React.FC<PortfolioCardProps> = ({
       )}
 
       {/* description */}
-      <p className="mt-3 text-sm leading-relaxed text-stone-600 line-clamp-3">
+      <p className="mt-3 text-sm leading-relaxed text-stone-600">
         {description}
       </p>
 
