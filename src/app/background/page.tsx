@@ -69,6 +69,7 @@ export default function Portfolios() {
 
         <span className="w-3 h-3 rounded-full bg-stone-400 z-10" />
 
+        {/* 飲食アルバイト */}
         <div className="relative w-full max-w-xl rounded-2xl border border-stone-200 bg-white/60 p-6 shadow-sm text-left transition-shadow hover:shadow-md">
           <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
             <h2 className="text-lg font-semibold tracking-tight">
@@ -121,6 +122,25 @@ export default function Portfolios() {
 
         <span className="w-3 h-3 rounded-full bg-stone-400 z-10" />
 
+        {/* 産業能率大学 */}
+        <div className="relative w-full max-w-xl rounded-2xl border border-stone-200 bg-white/60 p-6 shadow-sm text-left transition-shadow hover:shadow-md">
+          <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+            <h2 className="text-lg font-semibold tracking-tight">
+              産業能率大学 <br />
+              情報マネジメント学部 現代マネジメント学科 <br />
+              通信教育課程
+            </h2>
+            <span className="text-xs text-stone-400">2022 – 2026.03</span>
+          </div>
+          <p className="mt-4 text-sm leading-relaxed text-stone-600">
+            通信教育課程では、送付されるテキストを使用して勉強を行います。情報マネジメント学部現代マネジメント学科では経営学やマーケティングを中心に学習しました。
+            また、産業能率大学の創立者である「能率の父」上野陽一氏が提唱した能率10訓を学びました。
+          </p>
+        </div>
+
+        <span className="w-3 h-3 rounded-full bg-stone-400 z-10" />
+
+        {/* 学生エンジニアコミュニティ */}
         <div className="relative w-full max-w-xl rounded-2xl border border-stone-200 bg-white/60 p-6 shadow-sm text-left transition-shadow hover:shadow-md">
           <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
             <h2 className="text-lg font-semibold tracking-tight">
@@ -135,12 +155,13 @@ export default function Portfolios() {
 
         <span className="w-3 h-3 rounded-full bg-stone-400 z-10" />
 
+        {/* 株式会社アイムービック */}
         <div className="relative w-full max-w-xl rounded-2xl border border-stone-200 bg-white/60 p-6 shadow-sm text-left transition-shadow hover:shadow-md">
           <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
             <h2 className="text-lg font-semibold tracking-tight">
               株式会社アイムービック <br /> インターンシップ
             </h2>
-            <span className="text-xs text-stone-400">2025.8 – 2026.03</span>
+            <span className="text-xs text-stone-400">2025.08 – 2026.03</span>
           </div>
           <p className="mt-4 text-sm leading-relaxed text-stone-600">
             メッセージボードアプリ/サービスの企画・開発を約8ヶ月間支援して頂きました。UXを意識した開発の重要性を学び、顧客目線で使いやすいWebアプリ/サービスを設計することの難しさも感じました。
@@ -151,9 +172,26 @@ export default function Portfolios() {
 
         <span className="w-3 h-3 rounded-full bg-stone-400 z-10" />
 
-        <p className="z-10 mt-4">就職のため千葉県へ移住</p>
+        <p className="z-10">就職のため千葉県へ移住</p>
 
-        {/* <span className="w-3 h-3 rounded-full bg-stone-400 z-10" /> */}
+        {/* 東京のIT企業 */}
+        <div className="relative w-full max-w-xl rounded-2xl border border-stone-200 bg-white/60 p-6 shadow-sm text-left transition-shadow hover:shadow-md">
+          <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+            <h2 className="text-lg font-semibold tracking-tight">
+              東京のIT企業 就職 <br />
+              新人研修
+            </h2>
+            <span className="text-xs text-stone-400">2026.04 – 2026.06</span>
+          </div>
+          <p className="mt-4 text-sm leading-relaxed text-stone-600">
+            東京のIT企業に就職しました。 <br />
+            3カ月間の新人研修ではJavaやSpringBootを用いたWebシステムの開発を経験し、チームリーダーとしてチームメンバーの進捗管理やコードレビューを担当しました。
+          </p>
+        </div>
+
+        <p className="z-10 mt-4">絶賛奮闘中</p>
+
+        <span className="w-3 h-3 rounded-full bg-stone-400 z-10" />
       </div>
 
       {/* フッター */}
