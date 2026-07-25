@@ -4,6 +4,7 @@ export const portfoliosdata: PortfolioData[] = [
   {
     id: "mbapp",
     title: "メッセージボードアプリ",
+    url: "https://messageboard-pj.netlify.app/",
     period: "2025年8月～2026年3月",
     status: "paused",
     imageUrl: "/noimg-hiidev.svg",
