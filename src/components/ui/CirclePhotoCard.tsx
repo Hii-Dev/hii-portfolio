@@ -1,27 +1,25 @@
 import { CSSProperties } from "react";
+import Image from "next/image";
 
 interface PropsType {
   src: string;
   altText?: string;
-  imgStyle?: CSSProperties;
+  size?: number;
   imgWrapperStyle?: CSSProperties;
 }
 
 const CirclePhotoCard = (props: PropsType) => {
-  const { src, altText, imgWrapperStyle, imgStyle } = props;
-  const defaultStyle = {
-    objectFit: "cover",
-    width: "62px",
-    height: "62px",
-    borderRadius: "31px",
-  } as CSSProperties;
+  const { src, altText, size = 62, imgWrapperStyle } = props;
 
   return (
     <div style={imgWrapperStyle ? imgWrapperStyle : undefined}>
-      <img
+      <Image
         src={src}
         alt={altText ? altText : ""}
-        style={imgStyle ? imgStyle : defaultStyle}
+        width={size}
+        height={size}
+        unoptimized
+        style={{ objectFit: "cover", borderRadius: "50%" }}
       />
     </div>
   );

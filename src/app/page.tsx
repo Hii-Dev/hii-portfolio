@@ -1,9 +1,8 @@
-"use client";
-
+import type { Metadata } from "next";
 import NextLink from "next/link";
-import React, { useEffect, useState } from "react";
 import CustomButton from "@/components/ui/button";
 import Footer from "@/components/footer";
+import TypingAnimation from "@/components/TypingAnimation";
 import ZennStats from "@/components/stats/ZennStats";
 import NoteStats from "@/components/stats/NoteStats";
 import ShizumeStats from "@/components/stats/ShizumeStats";
@@ -14,41 +13,20 @@ import { FaSquareInstagram } from "react-icons/fa6";
 import { IoMail } from "react-icons/io5";
 import { SiZenn } from "react-icons/si";
 import { FaRegHandPointUp } from "react-icons/fa6";
+import { GITHUB_URL } from "@/lib/links";
+import { portfoliosdata } from "@/data/portfoliosData";
 
-const texts = [
-  "Hi, I'm Hii.",
-  "I'm an engineer from Ehime, Japan.",
-  "I currently live in Chiba.",
-  "I enjoy beer and Netflix.",
-];
+export const metadata: Metadata = {
+  title: "hii dev",
+  description:
+    "hii-dev は、情報系専門学生である私のスキルとプロジェクトを紹介するポートフォリオサイトです。",
+};
 
-function TypingAnimation() {
-  const [textIndex, setTextIndex] = useState(0);
-  const [charIndex, setCharIndex] = useState(0);
-  const [displayText, setDisplayText] = useState("");
-
-  useEffect(() => {
-    if (charIndex < texts[textIndex].length) {
-      const timeout = setTimeout(() => {
-        setDisplayText((prev) => prev + texts[textIndex][charIndex]);
-        setCharIndex((prev) => prev + 1);
-      }, 150);
-      return () => clearTimeout(timeout);
-    } else {
-      const delay = setTimeout(() => {
-        setCharIndex(0);
-        setDisplayText("");
-        setTextIndex((prev) => (prev + 1) % texts.length);
-      }, 2000);
-      return () => clearTimeout(delay);
-    }
-  }, [charIndex, textIndex]);
-  return (
-    <div className="flex items-center justify-center mt-20 h-40 mr-6 ml-6 rounded-2xl lg:h-screen lg:mt-0">
-      <p className="text-lg! font-mono animate-fade-in">{displayText}</p>
-    </div>
-  );
-}
+const totalProjects = portfoliosdata.length;
+const ongoingProjects = portfoliosdata.filter(
+  (p) => p.status === "ongoing"
+).length;
+const otherProjects = totalProjects - ongoingProjects;
 
 export default function Home() {
   return (
@@ -146,7 +124,8 @@ export default function Home() {
             <h2 className=" border-b border-stone-200 pb-1">PORTFOLIO</h2>
             <div className="mt-4">
               <p>
-                16 Projects <br />2 active / 14 completed or paused
+                {totalProjects} Projects <br />
+                {ongoingProjects} active / {otherProjects} completed or paused
               </p>
               <div className=" mt-6 flex justify-center">
                 <NextLink href="/portfolio">
@@ -168,7 +147,7 @@ export default function Home() {
                 <FaSquareXTwitter className="text-black text-4xl" />
               </a>
               <a
-                href="https://github.com/Hii-Dev"
+                href={GITHUB_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block"

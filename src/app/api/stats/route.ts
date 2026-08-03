@@ -5,20 +5,30 @@ const pool = new Pool({
   connectionString: process.env.DATABASE_URL,
 });
 
+// Idle clients emit "error" on unexpected disconnects; without a handler
+// this throws unhandled and can crash the process.
+pool.on("error", (error) => {
+  console.error("Unexpected pg pool error:", error);
+});
+
+export const revalidate = 600;
+
+const VALID_PLATFORMS = ["zenn", "note", "sizu"];
+
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const platform = searchParams.get("platform");
 
-  if (!platform) {
+  if (!platform || !VALID_PLATFORMS.includes(platform)) {
     return NextResponse.json(
-      { error: "platform が指定されていません" },
+      { error: "platform が指定されていないか、不正な値です" },
       { status: 400 }
     );
   }
 
-  try {
-    const client = await pool.connect();
+  const client = await pool.connect();
 
+  try {
     const { rows } = await client.query(
       `SELECT articles, likes, flowers, views
        FROM platform_stats
@@ -26,8 +36,6 @@ export async function GET(request: Request) {
        LIMIT 1`,
       [platform]
     );
-
-    client.release();
 
     if (rows.length === 0) {
       return NextResponse.json(
@@ -51,5 +59,7 @@ export async function GET(request: Request) {
       { error: "DB接続またはクエリ実行に失敗しました" },
       { status: 500 }
     );
+  } finally {
+    client.release();
   }
 }

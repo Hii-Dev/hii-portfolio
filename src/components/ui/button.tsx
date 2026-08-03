@@ -7,7 +7,7 @@ type CustomButtonProps = {
 
 const CustomButton: React.FC<CustomButtonProps> = ({ buttontext }) => {
   return (
-    <button
+    <span
       className="
         group
         flex items-center
@@ -33,7 +33,7 @@ const CustomButton: React.FC<CustomButtonProps> = ({ buttontext }) => {
       >
         <HiArrowRight className="w-3.5 h-3.5 text-gray-700" />
       </span>
-    </button>
+    </span>
   );
 };
 

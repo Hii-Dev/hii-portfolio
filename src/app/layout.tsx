@@ -59,7 +59,7 @@ export default function RootLayout({
           <div className="fixed top-0 w-full z-50">
             <Header />
           </div>
-          {children}
+          <main>{children}</main>
           <Analytics />
         </Providers>
       </body>

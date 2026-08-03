@@ -33,6 +33,6 @@ export const data = [
     description: `　2024年に制作した"hii-site."を今まで継続的に改修して運用していましたが、シンプルなデザインのポートフォリオサイトに変更したくなったので新たに制作しました。
   　今後はこちらの"hii-dev."をポートフォリオサイトとして公開します。`,
     techStack: "Next.js / TypeScript / TailwindCSS-v4",
-    githubLink: "https://github.com/CA01971020",
+    githubLink: "https://github.com/Hii-Dev",
   },
 ];

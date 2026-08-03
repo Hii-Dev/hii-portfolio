@@ -1,6 +1,12 @@
+import type { Metadata } from "next";
 import { data } from "@/data/updatesData";
 import { UpdatesCard } from "@/components/ui/updatesCard";
 import Footer from "@/components/footer";
+
+export const metadata: Metadata = {
+  title: "Update History | hii dev",
+  description: "hii devサイトの更新履歴をまとめたページです。",
+};
 
 export default function UpdateHistory() {
   return (

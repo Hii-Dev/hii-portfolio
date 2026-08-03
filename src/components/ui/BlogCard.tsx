@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import { SiZenn } from "react-icons/si";
 import { FiEdit3 } from "react-icons/fi";

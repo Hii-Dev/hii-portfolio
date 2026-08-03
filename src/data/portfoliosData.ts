@@ -37,7 +37,7 @@ export const portfoliosdata: PortfolioData[] = [
   {
     id: "notebot",
     title: "noteBot",
-    url: "https://github.com/CA01971020/note_bot",
+    url: "https://github.com/Hii-Dev/note_bot",
     period: "2025年12月",
     status: "paused",
     imageUrl: "/notebot-hiidev.png",
@@ -107,7 +107,7 @@ export const portfoliosdata: PortfolioData[] = [
   {
     id: "hii-dev",
     title: "hii-dev",
-    url: "https://github.com/CA01971020/hii-dev",
+    url: "https://github.com/Hii-Dev/hii-dev",
     period: "2025年4月～",
     status: "completed",
     imageUrl: "/hiidev.svg",
@@ -164,7 +164,7 @@ export const portfoliosdata: PortfolioData[] = [
   {
     id: "hii-site",
     title: "hii-site(旧サイト)",
-    url: "https://github.com/CA01971020/hii-site",
+    url: "https://github.com/Hii-Dev/hii-site",
     period: "2024年6月～2025年5月",
     status: "paused",
     imageUrl: "/hiisite-hiidev.svg",

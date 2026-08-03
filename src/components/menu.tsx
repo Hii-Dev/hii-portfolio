@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
+import { GITHUB_URL } from "@/lib/links";
 
 type MenuItem = {
   href: string;
@@ -20,7 +21,7 @@ const INTERNAL_LINKS: MenuItem[] = [
 
 const EXTERNAL_LINKS: MenuItem[] = [
   { href: "https://x.com/h1idev", label: "Twitter", external: true },
-  { href: "https://github.com/CA01971020", label: "GitHub", external: true },
+  { href: GITHUB_URL, label: "GitHub", external: true },
   {
     href: "mailto:CA01971020@st.kawahara.ac.jp",
     label: "E-Mail",
@@ -53,8 +54,13 @@ export default function Menu() {
         </MenuButton>
 
         <div className="mt-24 text-center lg:mt-12">
-          <MenuList items={INTERNAL_LINKS} onClick={() => setVisible(false)} />
-          <MenuList items={EXTERNAL_LINKS} />
+          <nav>
+            <MenuList
+              items={INTERNAL_LINKS}
+              onClick={() => setVisible(false)}
+            />
+            <MenuList items={EXTERNAL_LINKS} />
+          </nav>
 
           <footer className="mt-20">
             <small className="text-xl font-bold text-black">

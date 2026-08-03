@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import Footer from "@/components/footer";
+
+export const metadata: Metadata = {
+  title: "Background | hii dev",
+  description:
+    "hiiのこれまでの経歴・学歴・資格・活動歴をまとめた自己紹介ページです。",
+};
 
 export default function Portfolios() {
   return (

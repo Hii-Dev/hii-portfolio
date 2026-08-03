@@ -1,14 +1,13 @@
-"use client";
-
 import NextLink from "next/link";
 import CirclePhotoCard from "@/components/ui/CirclePhotoCard";
 import Menu from "./menu";
+import { GITHUB_URL } from "@/lib/links";
 
 export default function Header() {
   return (
-    <div className="flex items-center pt-1 pb-1 border-b border-stone-200 backdrop-blur-md">
+    <header className="flex items-center pt-1 pb-1 border-b border-stone-200 backdrop-blur-md">
       <a
-        href="https://github.com/Hii-Dev"
+        href={GITHUB_URL}
         target="_blank"
         rel="noopener noreferrer"
         className=" select-none pt-1 pl-4 pb-1 duration-200 hover:scale-110"
@@ -16,15 +15,10 @@ export default function Header() {
         <CirclePhotoCard
           src="/hii-pf-icon.svg"
           altText="プロフィール写真"
+          size={44}
           imgWrapperStyle={{
             padding: "4px",
             backgroundColor: "#eee",
-            borderRadius: "50%",
-          }}
-          imgStyle={{
-            width: "44px",
-            height: "44px",
-            objectFit: "cover",
             borderRadius: "50%",
           }}
         />
@@ -33,6 +27,6 @@ export default function Header() {
         <NextLink href="/">hii</NextLink>
       </h1>
       <Menu />
-    </div>
+    </header>
   );
 }

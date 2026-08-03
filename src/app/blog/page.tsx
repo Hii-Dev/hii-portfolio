@@ -1,6 +1,12 @@
+import type { Metadata } from "next";
 import { blogdata } from "@/data/blogsData";
 import { BlogCard } from "@/components/ui/BlogCard";
 import Footer from "@/components/footer";
+
+export const metadata: Metadata = {
+  title: "Blog | hii dev",
+  description: "Zennやnoteに投稿したhiiの技術記事の一覧ページです。",
+};
 
 export default function Portfolios() {
   return (

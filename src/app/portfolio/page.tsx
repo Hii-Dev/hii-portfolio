@@ -1,6 +1,12 @@
+import type { Metadata } from "next";
 import { portfoliosdata } from "@/data/portfoliosData";
 import { PortfolioCard } from "@/components/ui/PortfolioCard";
 import Footer from "@/components/footer";
+
+export const metadata: Metadata = {
+  title: "Portfolio | hii dev",
+  description: "hiiがこれまでに制作した個人開発・チーム開発プロジェクトの一覧です。",
+};
 
 export default function Portfolios() {
   return (
